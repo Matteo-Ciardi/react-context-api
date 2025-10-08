@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BudgetProvider } from "./context/BudgetContext";
 
 import DefaultLayout from "./layouts/DefaultLayout";
 
@@ -13,20 +14,22 @@ import NotFound from "./pages/notfound/NotFound";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<DefaultLayout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/chi-siamo" element={<AboutPage />} />
-          <Route path="/prodotti">
-            <Route index element={<ProductsPage />} />
-            <Route path=":id" element={<ProductDetailsPage />} />
+    <BudgetProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<DefaultLayout />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/chi-siamo" element={<AboutPage />} />
+            <Route path="/prodotti">
+              <Route index element={<ProductsPage />} />
+              <Route path=":id" element={<ProductDetailsPage />} />
+            </Route>
+            <Route path="/carrello" element={<ShoppingBag />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
-          <Route path="/carrello" element={<ShoppingBag />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </BudgetProvider>
   )
 }
 
