@@ -28,7 +28,10 @@ nav a.active {
 }
 
 nav button {
-    width: 105.367px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: 120px;
+    height: 29px;
     margin-right: 20px;
     padding: 5px 15px;
     background-color: #802c6e;
