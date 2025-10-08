@@ -16,8 +16,9 @@ const MainNavBar = () => {
 
     return (
         <nav>
-            <button onClick={() => setBudgetMode(!budgetMode)}>
-                {budgetMode ? "Disattiva Modalità Budget" : "Attiva Modalità Budget"}
+            <button onClick={() => setBudgetMode(!budgetMode)}
+                className={ budgetMode ? "outlet-on" : "outlet-off"}>
+                {budgetMode ?  "OUTLET OFF" : "OUTLET ON"}
             </button>
             <ul>
                 {links.map(link => (

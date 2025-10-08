@@ -26,3 +26,22 @@ nav a.active {
     background-color: #802c6e;
     border-radius: 2px;
 }
+
+nav button {
+    width: 105.367px;
+    margin-right: 20px;
+    padding: 5px 15px;
+    background-color: #802c6e;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.outlet-on {
+    background-color: #ff0000;
+}
+
+.outlet-off {
+    background-color: #802c6e;
+}
