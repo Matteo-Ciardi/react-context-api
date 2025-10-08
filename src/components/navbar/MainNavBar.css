@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+nav a:hover {
+    padding: 5px 10px;
+    background-color: #802c6e;
+    border-radius: 2px;
+}
+
+nav a.active {
+    padding: 5px 10px;
+    background-color: #802c6e;
+    border-radius: 2px;
+}

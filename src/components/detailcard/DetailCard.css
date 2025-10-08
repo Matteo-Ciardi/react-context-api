@@ -1,0 +1,76 @@
+.detail-card {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    margin: 50px auto;
+    box-shadow: 0px 3px 10px 3px black;
+}
+
+.detail-image-box {
+    flex-shrink: 0;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.detail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.detail-info {
+    height: 500px;
+    flex: 1;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-radius: 0px 10px 10px 0px;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+.detail-title {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.detail-price {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #802c6e;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #802c6e;
+    background: linear-gradient(to right, #802c6e 0%, #802c6e 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    border: 1px solid #802c6e;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-size 0.2s ease, color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.detail-description {
+    color: #000000;
+    line-height: 1.3;
+}

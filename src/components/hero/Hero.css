@@ -1,0 +1,17 @@
+.hero {
+    padding-top: 150px;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #000000;
+}

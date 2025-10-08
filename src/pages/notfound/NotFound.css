@@ -1,0 +1,9 @@
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found {
+    height: 800px;
+}
